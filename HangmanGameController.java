@@ -37,7 +37,7 @@ public class HangmanGameController {
     @FXML
     private ArrayList<Shape> bodyH;
 
-// Event to run game sequence
+// Event to run game sequence, 
     @FXML
     public void run(ActionEvent event) {
         hangmanGame = new Game();
