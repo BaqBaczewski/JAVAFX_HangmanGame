@@ -1,0 +1,29 @@
+package sample;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
+
+public class TitleScreenController {
+
+// initializing Button Start to move to game stage (HangmanGame)
+    @FXML
+    public void pressButton(ActionEvent event) throws Exception {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("HangmanGame.fxml"));
+
+        Parent HangmanGameLayout = loader.load();
+        HangmanGameController HangmanGameController = loader.<HangmanGameController>getController();
+//        Stage HangmanGameStage = new Stage();
+
+        Main.primaryStage.setTitle("Hangman Game");
+        Main.primaryStage.setScene(new Scene(HangmanGameLayout, 620, 430));
+//        HangmanGameStage.showAndWait();
+
+    }
+
