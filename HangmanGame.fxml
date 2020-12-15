@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane blendMode="DARKEN" prefHeight="430.0" prefWidth="620.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HangmanGameController">
+   <children>
+      <ImageView depthTest="DISABLE" fitHeight="301.0" fitWidth="646.0" layoutX="-3.0" layoutY="145.0" mouseTransparent="true" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../MicrosoftTeams-image%20(3).png" />
+         </image>
+      </ImageView>
+      <Text fontSmoothingType="LCD" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CATEGORY:" textAlignment="RIGHT" wrappingWidth="288.20000000000005">
+         <font>
+            <Font name="Candara Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Line endX="55.399993896484375" layoutX="284.0" layoutY="124.0" startX="-36.0" stroke="#614343" strokeWidth="4.0" />
+      <Line endX="100.89999389648438" endY="-56.5" layoutX="239.0" layoutY="181.0" startX="100.9000244140625" startY="57.0" stroke="#614343" strokeWidth="4.0" />
+      <Line endX="39.0" layoutX="323.0" layoutY="239.0" startX="-18.0" stroke="#614343" strokeWidth="4.0" />
+      <Line endX="-18.0" endY="24.0" layoutX="286.0" layoutY="126.0" startX="-18.0" stroke="#979797" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" />
+      <Circle fx:id="head" fill="#f3f4f5" layoutX="268.0" layoutY="164.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Line fx:id="body" endX="-18.0" endY="24.0" layoutX="285.0" layoutY="178.0" startX="-18.0" strokeWidth="2.0" />
+      <Line fx:id="leftArm" endX="-35.0" endY="16.600006103515625" layoutX="286.0" layoutY="176.0" startX="-18.0" strokeWidth="2.0" />
+      <Line fx:id="leftLeg" endX="-35.0" endY="19.600006103515625" layoutX="285.0" layoutY="201.0" startX="-18.0" strokeWidth="2.0" />
+      <Line fx:id="rightArm" endX="-1.600006103515625" endY="13.399993896484375" layoutX="284.0" layoutY="176.0" startX="-18.0" strokeWidth="2.0" />
+      <Line fx:id="rightLeg" endX="-2.600006103515625" endY="17.399993896484375" layoutX="286.0" layoutY="202.0" startX="-18.0" strokeWidth="2.0" />
+      <Button fx:id="LetterA" alignment="CENTER" contentDisplay="CENTER" layoutX="101.0" layoutY="306.0" mnemonicParsing="false" onAction="#letterClick" prefHeight="32.0" prefWidth="32.0" text="A" textFill="#0e0e0e">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="LetterB" alignment="CENTER" layoutX="133.0" layoutY="306.0" mnemonicParsing="false" onAction="#letterClick" prefHeight="32.0" prefWidth="32.0" text="B">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="LetterC" alignment="CENTER" layoutX="165.0" layoutY="306.0" mnemonicParsing="false" onAction="#letterClick" prefHeight="32.0" prefWidth="32.0" text="C">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font></Button>
+      <Label fx:id="password" alignment="CENTER" contentDisplay="CENTER" layoutX="97.0" layoutY="51.0" onMouseClicked="#letterClick" prefHeight="32.0" prefWidth="432.0" textAlignment="JUSTIFY">
+         <font>
+            <Font name="Candara Bold" size="36.0" />
+         </font></Label>
+      <Button fx:id="LetterD" alignment="CENTER" layoutX="197.0" layoutY="306.0" mnemonicParsing="false" onAction="#letterClick" prefHeight="32.0" prefWidth="32.0" text="D">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="LetterE" alignment="CENTER" layoutX="229.0" layoutY="306.0" mnemonicParsing="false" onAction="#letterClick" prefHeight="32.0" prefWidth="32.0" text="E">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="LetterF" alignment="CENTER" layoutX="261.0" layoutY="306.0" mnemonicParsing="false" onAction="#letterClick" prefHeight="32.0" prefWidth="32.0" text="F">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="LetterG" alignment="CENTER" layoutX="293.0" layoutY="306.0" mnemonicParsing="false" onAction="#letterClick" prefHeight="32.0" prefWidth="32.0" text="G">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="LetterI" alignment="CENTER" layoutX="357.0" layoutY="306.0" mnemonicParsing="false" onAction="#letterClick" prefHeight="32.0" prefWidth="32.0" text="I">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="LetterJ" alignment="CENTER" layoutX="389.0" layoutY="306.0" mnemonicParsing="false" onAction="#letterClick" prefHeight="32.0" prefWidth="32.0" text="J">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="LetterH" alignment="CENTER" layoutX="325.0" layoutY="306.0" mnemonicParsing="false" onAction="#letterClick" prefHeight="32.0" prefWidth="32.0" text="H">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="LetterK" alignment="CENTER" layoutX="421.0" layoutY="306.0" mnemonicParsing="false" onAction="#letterClick" prefHeight="32.0" prefWidth="32.0" text="K">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="LetterL" alignment="CENTER" layoutX="453.0" layoutY="306.0" mnemonicParsing="false" onAction="#letterClick" prefHeight="32.0" prefWidth="32.0" text="L">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="LetterM" alignment="CENTER" layoutX="485.0" layoutY="306.0" mnemonicParsing="false" onAction="#letterClick" prefHeight="32.0" prefWidth="32.0" text="M">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="LetterN" alignment="CENTER" layoutX="101.0" layoutY="344.0" mnemonicParsing="false" onAction="#letterClick" prefHeight="32.0" prefWidth="32.0" text="N">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="LetterO" alignment="CENTER" layoutX="133.0" layoutY="344.0" mnemonicParsing="false" onAction="#letterClick" prefHeight="32.0" prefWidth="32.0" text="O">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="LetterP" alignment="CENTER" layoutX="165.0" layoutY="344.0" mnemonicParsing="false" onAction="#letterClick" prefHeight="32.0" prefWidth="32.0" text="P">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="LetterR" alignment="CENTER" layoutX="229.0" layoutY="344.0" mnemonicParsing="false" onAction="#letterClick" prefHeight="32.0" prefWidth="32.0" text="R">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="LetterS" alignment="CENTER" layoutX="261.0" layoutY="344.0" mnemonicParsing="false" onAction="#letterClick" prefHeight="32.0" prefWidth="32.0" text="S">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="LetterT" alignment="CENTER" layoutX="293.0" layoutY="344.0" mnemonicParsing="false" onAction="#letterClick" prefHeight="32.0" prefWidth="32.0" text="T">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="LetterU" alignment="CENTER" layoutX="325.0" layoutY="344.0" mnemonicParsing="false" onAction="#letterClick" prefHeight="32.0" prefWidth="32.0" text="U">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="LetterW" alignment="CENTER" layoutX="389.0" layoutY="344.0" mnemonicParsing="false" onAction="#letterClick" prefHeight="32.0" prefWidth="32.0" text="W">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="LetterX" alignment="CENTER" layoutX="421.0" layoutY="344.0" mnemonicParsing="false" onAction="#letterClick" prefHeight="32.0" prefWidth="32.0" text="X">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="LetterY" alignment="CENTER" layoutX="453.0" layoutY="344.0" mnemonicParsing="false" onAction="#letterClick" prefHeight="32.0" prefWidth="32.0" text="Y">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="LetterZ" alignment="CENTER" layoutX="485.0" layoutY="344.0" mnemonicParsing="false" onAction="#letterClick" prefHeight="32.0" prefWidth="32.0" text="Z">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="text" layoutX="296.0" layoutY="12.0" prefHeight="25.0" prefWidth="323.0" text="TECHNOLOGY" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Candara Bold Italic" size="18.0" />
+         </font></Label>
+      <Button fx:id="run" alignment="CENTER" layoutX="272.0" layoutY="262.0" mnemonicParsing="false" onAction="#run" prefHeight="32.0" prefWidth="61.0" text="RUN">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="LetterV" alignment="CENTER" layoutX="357.0" layoutY="344.0" mnemonicParsing="false" onAction="#letterClick" prefHeight="32.0" prefWidth="32.0" text="V">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="LetterQ" alignment="CENTER" layoutX="197.0" layoutY="344.0" mnemonicParsing="false" onAction="#letterClick" prefHeight="32.0" prefWidth="32.0" text="Q">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
